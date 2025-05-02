@@ -1,0 +1,11 @@
+# ignore generateOTP.js
+generateOTP.js
+
+# ignore ALL files in ANY directory named node_modules
+node_modules/
+
+# ignore .env files
+*.env
+
+# ignore .json files
+*.json
