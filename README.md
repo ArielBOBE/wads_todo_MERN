@@ -114,7 +114,7 @@
         CONNECTION_URL = your_mongodb_connection_string
         PORT = 5000
 
-        REFRESH_TOKEN_SECRET = buttwebbythetoken
+        REFRESH_TOKEN_SECRET = your refresh token
 
         AUTH_EMAIL = gmail address to be used to send OTP links
         AUTH_PASS = your gmail app password
