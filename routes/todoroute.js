@@ -71,7 +71,7 @@ router.post("/add_todo", createTodo)
 /**
  * @openapi
  * /update_todo:
- *   put:
+ *   patch:
  *     tags:
  *       - To do
  *     summary: Update a task

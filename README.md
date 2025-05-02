@@ -1,6 +1,6 @@
 # To Do List App using MERN Stack
 
-## API Documentation
+## API Testing
 
 ### 1. To Do
 
@@ -100,3 +100,41 @@
 
 - Requires Bearer Token in the header
 - Typically handled in the auth middleware, which continues to the callback function which returns complete user information
+
+## Getting Started
+
+1.  Clone the repository
+2.  Install dependencies
+    ###
+        npm install
+3.  Create a .env file in the root directory with the following variables:
+
+    ###
+
+        CONNECTION_URL = your_mongodb_connection_string
+        PORT = 5000
+
+        REFRESH_TOKEN_SECRET = buttwebbythetoken
+
+        AUTH_EMAIL = gmail address to be used to send OTP links
+        AUTH_PASS = your gmail app password
+
+4.  Start the server
+    ###
+        node index.js
+
+## API Documentation
+
+### User Endpoints
+
+- POST /service/user/signup - Register a new user
+- POST /service/user/activation - Activate user account
+- POST /service/user/signin - Sign in user
+- GET /service/user/user-info - Get user information (requires authentication)
+
+### Todo Endpoints
+
+- POST /service/todo - Create a new todo
+- GET /service/todo - Get all todos
+- PATCH /service/todo/:id - Update a todo
+- DELETE /service/todo/:id - Delete a todo
